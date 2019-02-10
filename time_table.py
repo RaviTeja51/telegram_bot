@@ -21,7 +21,7 @@ def main():
     with open("chat_id.txt") as f:
         #to read all lines in the file
         c = f.readlines()
-    #using the regex module to create regular expression object for a string ending with
+    #using the regex module to create regular expression object for a string ending with digits, to get the chat id
     id1  = re.compile(r'\d{9}$')
 
     for i in c:
